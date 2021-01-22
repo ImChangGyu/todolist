@@ -1,6 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body,
+html {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  background: #333333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  background-size: cover;
+  background-position: center center;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  background: none;
+  appearance: none;
+  border: 0;
+  font-size: 22px;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:focus,
+input:active {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin-top: 25px;
+}
+.center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .form, .greetings{
     display: none;
 }
 .showing {
-    display: block;
+    display: flex;
+}
+.greetings, .clock, .toDoList, .toDoForm{
+    padding: 12px;
+
+}
+.clock{
+    font-size: 7em;
+    margin: 0;
+}
+.toDo__button{
+    margin-right: 10px;
+    cursor: pointer;
+    background: rgba(0,0,0,0);
+    border: 0;
+}
+.toDoList{
+    font-size: 20px;
+}
+.toDo {
+    font-size: 22px;
+    color: white;
 }
